@@ -1,4 +1,5 @@
-﻿namespace Ass6
+using System;
+namespace Ass6
 {
     class Program
     {
@@ -10,15 +11,15 @@
             
             //User Input
             Console.Write("Input your investment amount: ");
-            //เงินเริ่มต้น
+            
             double investAmount = Convert.ToDouble(Console.ReadLine());
             Console.Write("Input your number of downline member: ");
-            //จน.สมาชิก
+            
             int member = Convert.ToInt32(Console.ReadLine());
-            double Rate = investAmount * 0.1;//โบนัสเริ่มต้น
+            double Rate = investAmount * 0.1;
             double BonusRate;
 
-            //เงื่อนไข+แสดงผล
+            
             if (member>=60)
             {
                 BonusRate = 0.3;
